@@ -8,6 +8,10 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
+/**
+ * Service qui gere la logique metier des wallets
+ */
+
 @Service
 @RequiredArgsConstructor
 public class WalletService {

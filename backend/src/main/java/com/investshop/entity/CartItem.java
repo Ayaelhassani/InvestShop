@@ -6,6 +6,11 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+/**
+ * Representation d'un élement du panier
+ * Chaque CartItem est lié à un seul wallet
+ */
+
 @Entity
 @Table(name = "cart_items")
 @Data

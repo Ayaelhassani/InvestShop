@@ -15,6 +15,6 @@ public class CartDTO {
 
     private List<WalletDTO> items;
 
-    // total calculé automatiquement par le système
+    //Total calcule automatiquement par le système
     private Double total;
 }

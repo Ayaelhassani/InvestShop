@@ -12,6 +12,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+
+/**
+ * cette classe représente un portefeuille d'investissement.
+ * Contient les informations du wallet comme le nom, le groupe,
+ * les gains de l'année dernière et le prix
+ */
 public class Wallet {
 
     @Id

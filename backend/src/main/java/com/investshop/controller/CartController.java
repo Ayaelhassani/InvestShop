@@ -5,8 +5,12 @@ import com.investshop.service.CartService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.io.IOException;
+
+/**
+ * Controller REST exposant les endpoints liés au panier
+ * Accessible via /api/cart
+ */
 
 @RestController
 @RequestMapping("/api/cart")

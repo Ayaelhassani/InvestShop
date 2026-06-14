@@ -15,6 +15,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
+/**
+ * Service qui gère la logique métier du panier
+ * Permet d'ajouter, supprimer et sauvegarder les wallets du panier
+ */
+
 @Service
 @RequiredArgsConstructor
 public class CartService {
@@ -44,7 +49,7 @@ public class CartService {
     }
 
     public void addToCart(Long walletId) {
-        // vérifie que le wallet n'est pas déjà dans le panier
+        //Verifie que le wallet n'est pas déjà dans le panier
         if (cartItemRepository.existsByWalletId(walletId)) {
             throw new IllegalStateException("Ce wallet est déjà dans le panier");
         }
@@ -65,7 +70,6 @@ public class CartService {
 
     public void saveCart() throws IOException {
         CartDTO cart = getCart();
-
         File file = new File(cartFilePath);
         //creation du dossier s'il n'existe pas
         file.getParentFile().mkdirs();

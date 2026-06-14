@@ -7,6 +7,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
+
+/**
+ * Controller REST exposant les endpoints liés aux wallets
+ * Accessible via /api/wallets
+ */
 @RestController
 @RequestMapping("/api/wallets")
 @RequiredArgsConstructor
