@@ -15,7 +15,18 @@ Angular 19
 TypeScript
 HTML / CSS
 
-## Lancer le projet
+## CI/CD
+Ce projet est prêt à être intégré dans un pipeline CI/CD.
+
+# Jenkins
+Pour intégrer ce projet dans Jenkins, il suffit de créer un Jenkinsfile.
+
+# Déploiement
+Pour déployer le projet dans un serveur de recette par exemple, il suffit de :
+- Lancer `mvn clean package` pour générer le fichier `.jar` dans le dossier target 
+- Déployer le `.jar` sur le serveur avec `java -jar investshop-0.0.1-SNAPSHOT.jar`
+
+## Lancer le projet en local
 j'ai mis la partie backend dans le dossier "backend" et la partie frontend dans le dosssier "frontend"
 # Backend
 cd backend
