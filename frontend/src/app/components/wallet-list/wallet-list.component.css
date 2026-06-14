@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.wallets-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.wallet-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  width: 250px;
+}
+
+.wallet-name {
+  color: green;
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.label {
+  color: gray;
+}
+
+.boutton-cart {
+  background-color: green;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.boutton-add {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.boutton-add:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}

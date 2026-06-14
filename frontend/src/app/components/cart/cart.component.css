@@ -1,0 +1,61 @@
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.info {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.label {
+  color: gray;
+}
+
+.boutton-save {
+  background-color: green;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.boutton-back {
+  background-color: #333;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.boutton-remove {
+  background-color: red;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.total {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: right;
+  font-size: 18px;
+}

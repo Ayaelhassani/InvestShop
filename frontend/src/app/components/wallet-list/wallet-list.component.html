@@ -1,0 +1,32 @@
+<div class="container">
+
+  <div class="header">
+    <h1>Investment Wallets</h1>
+    <button class="boutton-cart" (click)="goToCart()">Go to Cart</button>
+  </div>
+  <div class="wallets-grid">
+    <div class="wallet-card" *ngFor="let wallet of wallets"> 
+      <h3 class="wallet-name">{{wallet.name}}</h3>
+      <div class="info">
+        <span class="label">Asset Group:</span>
+        <span>{{wallet.assetGroup}}</span>
+      </div>
+      <div class="info">
+        <span class="label">Gains Last Year:</span>
+        <span>{{wallet.gainsLastYear}}%</span>
+      </div>
+      <div class="info">
+        <span class="label">Price:</span>
+        <span>{{wallet.price}}$</span>
+      </div>
+
+      <button 
+        class="boutton-add" 
+        (click)="addToCart(wallet.id)" 
+        [disabled]="wallet.inCart">
+        {{wallet.inCart? 'In Cart':'Add to Cart'}}
+      </button>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,36 @@
+<div class="container">
+
+  <div class="header">
+    <h1>My Cart</h1>
+    <div>
+      <button class="boutton-save" (click)="saveCart()">Save Cart</button>
+      <button class="boutton-back" (click)="goToWallets()">Back to Wallets</button>
+    </div>
+  </div>
+  <div *ngIf="cart.items.length === 0">
+    <p>Votre panier est vide</p>
+  </div>
+  <div *ngFor="let item of cart.items" class="cart-item">
+    <div class="info">
+      <span class="label">Wallet Name:</span>
+      <span>{{item.name}}</span>
+    </div>
+    <div class="info">
+      <span class="label">Asset Group:</span>
+      <span>{{item.assetGroup}}</span>
+    </div>
+    <div class="info">
+      <span class="label">Gains Last Year:</span>
+      <span>{{item.gainsLastYear}}%</span>
+    </div>
+    <div class="info">
+      <span class="label">Price:</span>
+      <span>{{item.price}}$</span>
+    </div>
+    <button class="boutton-remove" (click)="removeFromCart(item.id)">Remove</button>
+  </div>
+  <div class="total" *ngIf="cart.items.length > 0">
+    <strong>Total:{{cart.total}}$</strong>
+  </div>
+
+</div>
