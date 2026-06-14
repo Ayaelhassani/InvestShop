@@ -9,7 +9,6 @@ public interface CartItemRepository extends JpaRepository<CartItem, Long> {
 
     //Verifie si un wallet est deja dans le panier
     boolean existsByWalletId(Long walletId);
-
     //Supprime un item du panier par l'id du wallet
     void deleteByWalletId(Long walletId);
 }
